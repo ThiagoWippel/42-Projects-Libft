@@ -23,8 +23,8 @@ void *ft_memset(void *b, int c, size_t len);
 - `int c`: The byte value to set, passed as an int but converted to unsigned char internally.
 
 - `size_t len`: Number of bytes to be set to the value `c`.
-
-
+  
+&nbsp;
 
 - `void *b`: Ponteiro para a área de memória a ser preenchida.
 
