@@ -18,19 +18,19 @@ void *ft_memset(void *b, int c, size_t len);
 
 ### Parameters / Parâmetros
 
-`void *b`: Pointer to the memory area to be filled.
+- `void *b`: Pointer to the memory area to be filled.
 
-`int c`: The byte value to set, passed as an int but converted to unsigned char internally.
+- `int c`: The byte value to set, passed as an int but converted to unsigned char internally.
 
-`size_t len`: Number of bytes to be set to the value `c`.
+- `size_t len`: Number of bytes to be set to the value `c`.
 
--
 
-`void *b`: Ponteiro para a área de memória a ser preenchida.
 
-`int c`: Valor do byte a ser definido, passado como int mas convertido para unsigned char internamente.
+- `void *b`: Ponteiro para a área de memória a ser preenchida.
 
-`size_t len`: Número de bytes a serem preenchidos com o valor `c`.
+- `int c`: Valor do byte a ser definido, passado como int mas convertido para unsigned char internamente.
+
+- `size_t len`: Número de bytes a serem preenchidos com o valor `c`.
 
 ---
 
