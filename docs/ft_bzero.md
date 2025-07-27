@@ -1,5 +1,3 @@
----
-
 # ft\_bzero Documentation
 
 ### Function Prototype / Protótipo da Função
