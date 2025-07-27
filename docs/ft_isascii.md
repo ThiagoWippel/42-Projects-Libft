@@ -18,9 +18,9 @@ int ft_isascii(int c);
 
 ### Parameters / Parâmetros
 
-`int c`: The character to be tested, passed as an integer.
+- `int c`: The character to be tested, passed as an integer.
 
-`int c`: Caractere a ser testado, passado como inteiro.
+- `int c`: Caractere a ser testado, passado como inteiro.
 
 ---
 
