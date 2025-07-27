@@ -41,6 +41,12 @@ Consiste na reimplementação de funções padrão da linguagem C, além da cria
 
 ```bash
 42-Projects-Libft/
-├── ft_*.c           # Source files / Arquivos fonte
-├── libft.h          # Header file / Arquivo de cabeçalho
-└── Makefile         # Build script / Script de compilação
+├── src/                  
+│   └── ft_*.c            # C files / Arquivos C
+├── includes/
+│   └── libft.h           # Header file / Arquivo de cabeçalho
+├── docs/                 
+│   ├── ft_*.md           # Individual Documentation / Documentação individual
+├── Makefile              # Build script / Script de compilação
+└── README.md             # Explicação geral do projeto
+
