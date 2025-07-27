@@ -33,6 +33,7 @@ void *ft_memcpy(void *dest, const void *src, size_t n);
 ### Return Value / Valor de Retorno
 
 Returns a pointer to the destination memory area `dest`.
+
 Retorna um ponteiro para a área de memória destino `dest`.
 
 ---
