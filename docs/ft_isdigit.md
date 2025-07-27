@@ -1,5 +1,3 @@
----
-
 # ft\_isdigit Documentation
 
 ## English Version
