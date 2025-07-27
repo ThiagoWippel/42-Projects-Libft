@@ -33,15 +33,11 @@ char *ft_strnstr(const char *big, const char *little, size_t len);
 ### Return Value / Valor de Retorno
 
 Returns a pointer to the first occurrence of `little` within `big` (within the first `len` characters).
-Returns `NULL` if `little` is not found within the first `len` characters.
-
-If `little` is an empty string, returns `big`.
+Returns `NULL` if `little` is not found within the first `len` characters. If `little` is an empty string, returns `big`.
 
 
 Retorna um ponteiro para a primeira ocorrência de `little` dentro de `big` (nos primeiros `len` caracteres).
-Retorna `NULL` se `little` não for encontrado nos primeiros `len` caracteres.
-
-Se `little` for uma string vazia, retorna `big`.
+Retorna `NULL` se `little` não for encontrado nos primeiros `len` caracteres. Se `little` for uma string vazia, retorna `big`.
 
 ---
 
