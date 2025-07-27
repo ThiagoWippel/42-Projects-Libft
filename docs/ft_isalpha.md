@@ -27,9 +27,9 @@ int ft_isalpha(int c);
 ### Return Value / Valor de Retorno
 
 Returns **non-zero (true)** if `c` is an uppercase (`'A'` to `'Z'`) or lowercase (`'a'` to `'z'`) alphabetic character.
-Retorna **diferente de zero (verdadeiro)** se `c` for uma letra alfabética maiúscula (`'A'` a `'Z'`) ou minúscula (`'a'` a `'z'`).
-
 Returns **0 (false)** otherwise, including when `c` is outside the ASCII range (0–127).
+
+Retorna **diferente de zero (verdadeiro)** se `c` for uma letra alfabética maiúscula (`'A'` a `'Z'`) ou minúscula (`'a'` a `'z'`).
 Retorna **0 (falso)** caso contrário, inclusive quando `c` estiver fora do intervalo ASCII (0–127).
 
 ---
