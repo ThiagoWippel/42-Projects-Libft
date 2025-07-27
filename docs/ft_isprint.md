@@ -18,9 +18,9 @@ int ft_isprint(int c);
 
 ### Parameters / Parâmetros
 
-`int c`: The character to be tested, passed as an integer (usually an `unsigned char` cast to `int` or EOF).
+- `int c`: The character to be tested, passed as an integer (usually an `unsigned char` cast to `int` or EOF).
 
-`int c`: Caractere a ser testado, passado como inteiro (geralmente um `unsigned char` convertido para `int` ou EOF).
+- `int c`: Caractere a ser testado, passado como inteiro (geralmente um `unsigned char` convertido para `int` ou EOF).
 
 ---
 
