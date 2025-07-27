@@ -1,5 +1,3 @@
----
-
 # ft\_isalpha Documentation
 
 ### Function Prototype / Protótipo da Função
