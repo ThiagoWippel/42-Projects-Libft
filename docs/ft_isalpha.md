@@ -1,35 +1,38 @@
-# ft\_isalpha Documentation
-
-## English Version
-
-### Function Prototype
-
-```c
+ft_isalpha Documentation
+Function Prototype / Protótipo da Função
+c
+Copy
+Edit
 int ft_isalpha(int c);
-```
+Description / Descrição
+ft_isalpha checks whether the given character c is an alphabetic letter (uppercase or lowercase).
+ft_isalpha verifica se o caractere fornecido c é uma letra do alfabeto (maiúscula ou minúscula).
 
-### Description
+Parameters / Parâmetros
+int c: The character to be tested, passed as an integer (usually an unsigned char cast to int or EOF).
+int c: Caractere a ser testado, passado como inteiro (geralmente um unsigned char convertido para int ou EOF).
 
-`ft_isalpha` checks whether the given character `c` is an alphabetic letter (either uppercase or lowercase).
+Return Value / Valor de Retorno
+Returns non-zero (true) if c is an uppercase ('A' to 'Z') or lowercase ('a' to 'z') alphabetic character.
+Retorna diferente de zero (verdadeiro) se c for uma letra alfabética maiúscula ('A' a 'Z') ou minúscula ('a' a 'z').
 
-### Parameters
+Returns 0 (false) otherwise, including when c is outside the ASCII range (0–127).
+Retorna 0 (falso) caso contrário, inclusive quando c estiver fora do intervalo ASCII (0–127).
 
-* `int c`: The character to be tested, passed as an integer (usually an `unsigned char` cast to `int` or EOF).
+Details / Detalhes
+The function first verifies that c lies within the ASCII range. If not, it immediately returns 0.
+Em primeiro lugar, a função verifica se c está dentro do intervalo ASCII. Se não estiver, retorna 0 imediatamente.
 
-### Return Value
+Then it checks whether c falls within the ranges of uppercase or lowercase alphabetic ASCII values.
+Depois, ela verifica se c está nos intervalos ASCII das letras maiúsculas ou minúsculas.
 
-* Returns **non-zero (true)** if `c` is an uppercase (`'A'` to `'Z'`) or lowercase (`'a'` to `'z'`) alphabetic character.
-* Returns **0 (false)** otherwise, including when `c` is outside the ASCII range (0–127).
+This implementation mimics the behavior of the standard C isalpha function, with added validation for non-ASCII input.
+Esta implementação imita o comportamento da função isalpha da biblioteca padrão C, com validação adicional para entradas fora do ASCII.
 
-### Details
-
-* This function first verifies that the input character `c` is within the ASCII range. If not, it returns 0 immediately.
-* It then tests whether `c` falls within the ranges of uppercase or lowercase alphabetic ASCII codes.
-* The function behavior mimics the standard C library function `isalpha` but ensures safety by rejecting out-of-range inputs.
-
-### Example Usage
-
-```c
+Example Usage / Exemplo de Uso
+c
+Copy
+Edit
 #include "libft.h"
 #include <stdio.h>
 
@@ -42,50 +45,3 @@ int main(void)
         printf("%c is not an alphabetic character.\n", ch);
     return 0;
 }
-```
-
----
-
-## Versão em Português
-
-### Protótipo da Função
-
-```c
-int ft_isalpha(int c);
-```
-
-### Descrição
-
-A função `ft_isalpha` verifica se o caractere `c` fornecido é uma letra do alfabeto (maiúscula ou minúscula).
-
-### Parâmetros
-
-* `int c`: O caractere a ser testado, passado como inteiro (normalmente um `unsigned char` convertido para `int` ou EOF).
-
-### Valor de Retorno
-
-* Retorna **valor diferente de zero (verdadeiro)** se `c` for uma letra maiúscula (`'A'` a `'Z'`) ou minúscula (`'a'` a `'z'`).
-* Retorna **0 (falso)** caso contrário, inclusive se `c` estiver fora do intervalo ASCII (0–127).
-
-### Detalhes
-
-* A função primeiro verifica se o caractere está dentro do intervalo ASCII válido. Caso contrário, retorna 0 imediatamente.
-* Em seguida, verifica se `c` está dentro dos intervalos de letras maiúsculas ou minúsculas na tabela ASCII.
-* O comportamento é similar à função padrão da biblioteca C `isalpha`, mas garantindo segurança ao rejeitar entradas fora do intervalo ASCII.
-
-### Exemplo de Uso
-
-```c
-#include "libft.h"
-#include <stdio.h>
-
-int main(void)
-{
-    char ch = 'G';
-    if (ft_isalpha(ch))
-        printf("%c é um caractere alfabético.\n", ch);
-    else
-        printf("%c não é um caractere alfabético.\n", ch);
-    return 0;
-}
-```
