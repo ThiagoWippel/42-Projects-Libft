@@ -37,6 +37,7 @@ void *ft_memset(void *b, int c, size_t len);
 ### Return Value / Valor de Retorno
 
 Returns the pointer `b` to the memory area filled.
+
 Retorna o ponteiro `b` para a área de memória preenchida.
 
 ---
