@@ -20,6 +20,8 @@ int ft_isascii(int c);
 
 - `int c`: The character to be tested, passed as an integer.
 
+&nbsp;
+
 - `int c`: Caractere a ser testado, passado como inteiro.
 
 ---
