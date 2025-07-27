@@ -18,9 +18,9 @@ size_t ft_strlen(const char *str);
 
 ### Parameters / Parâmetros
 
-`const char *str`: Pointer to the null-terminated string whose length is to be calculated.
-
-`const char *str`: Ponteiro para a string terminada em nulo cuja extensão será calculada.
+- `const char *str`: Pointer to the null-terminated string whose length is to be calculated.
+&nbsp;
+- `const char *str`: Ponteiro para a string terminada em nulo cuja extensão será calculada.
 
 ---
 
