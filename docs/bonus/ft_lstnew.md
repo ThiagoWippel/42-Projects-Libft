@@ -1,4 +1,3 @@
-/**
  * ft_lstnew
  *
  * Cria um novo nó para uma lista encadeada com o conteúdo fornecido.
