@@ -1,7 +1,3 @@
-Aqui está a documentação atualizada, refletindo a nova implementação com reutilização de `ft_lstlast`:
-
----
-
 # ft\_lstadd\_back Documentation
 
 ### Function Prototype / Protótipo da Função
