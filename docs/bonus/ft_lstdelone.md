@@ -1,5 +1,3 @@
----
-
 # ft\_lstdelone Documentation
 
 ### Function Prototype / Protótipo da Função
