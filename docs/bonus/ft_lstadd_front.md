@@ -19,15 +19,10 @@ void ft_lstadd_front(t_list **lst, t_list *new);
 ### Parameters / Parâmetros
 
 * `t_list **lst`: A pointer to the pointer to the first element of the list.
-
- 
-
 * `t_list **lst`: Ponteiro para o ponteiro do primeiro elemento da lista.
 
+
 * `t_list *new`: The new element to add at the front of the list.
-
- 
-
 * `t_list *new`: O novo elemento a ser adicionado no início da lista.
 
 ---
