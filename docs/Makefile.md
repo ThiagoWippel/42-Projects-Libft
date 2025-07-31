@@ -32,6 +32,7 @@ Este Makefile automatiza a compilação dos arquivos fonte em arquivos objeto e,
 
 * `BONUS_OBJ`: List of object files (.o) derived from `BONUS_SRC`.
 
+ 
 
 * `NAME`: Nome da biblioteca estática gerada (`libft.a`).
 
@@ -65,6 +66,7 @@ Este Makefile automatiza a compilação dos arquivos fonte em arquivos objeto e,
 
 * `re`: Cleans and rebuilds everything from scratch.
 
+ 
 
 * `all`: Alvo padrão. Compila a biblioteca estática com as funções obrigatórias.
 
@@ -94,6 +96,7 @@ Run `make fclean` to remove object files and the library archive.
 
 Run `make re` to clean and rebuild the library entirely.
 
+ 
 
 Execute `make` ou `make all` para compilar a biblioteca Libft com as funções obrigatórias.
 
@@ -118,7 +121,8 @@ Execute `make re` para limpar e recompilar completamente a biblioteca.
 * The archive command `ar rcs` creates or updates the static library efficiently.
 
 * Phony targets ensure that commands run even if files with those names exist.
-  
+
+ 
 
 * O Makefile utiliza flags padrão de compilação que aplicam avisos estritos (`-Wall -Wextra -Werror`).
 
