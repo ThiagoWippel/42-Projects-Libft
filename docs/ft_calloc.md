@@ -1,6 +1,6 @@
-# ft\_calloc Documentation
+# ft_calloc Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 void *ft_calloc(size_t nmemb, size_t size);
@@ -8,51 +8,36 @@ void *ft_calloc(size_t nmemb, size_t size);
 
 ---
 
-### Description / Descrição
+### Description
 
-`ft_calloc` allocates memory for an array of `nmemb` elements of `size` bytes each, initializes all bytes to zero, and returns a pointer to the allocated memory.
-
-`ft_calloc` aloca memória para um array de `nmemb` elementos de `size` bytes cada, inicializa todos os bytes com zero e retorna um ponteiro para a memória alocada.
+`ft_calloc` allocates memory for an array of `nmemb` elements of `size` bytes each, initializes all allocated bytes to zero, and returns a pointer to the allocated memory.
 
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `size_t nmemb`: Number of elements to allocate.
 * `size_t size`: Size in bytes of each element.
 
- 
-
-* `size_t nmemb`: Número de elementos a serem alocados.
-* `size_t size`: Tamanho em bytes de cada elemento.
-
 ---
 
-### Return Value / Valor de Retorno
+### Return Value
 
 Returns a pointer to the allocated and zero-initialized memory.
-Returns `NULL` if allocation fails or if integer overflow occurs during size calculation.
+Returns `NULL` if the allocation fails or if an integer overflow occurs during size calculation.
 If either parameter is zero, returns a valid pointer to 1 byte of allocated memory.
 
-Retorna um ponteiro para a memória alocada e inicializada com zero.
-Retorna `NULL` se a alocação falhar ou se ocorrer overflow na multiplicação do tamanho.
-Se qualquer parâmetro for zero, retorna um ponteiro válido para 1 byte de memória alocada.
-
 ---
 
-### Details / Detalhes
+### Details
 
-If either `nmemb` or `size` is zero, the function returns the result of `malloc(1)`, ensuring a valid pointer is always returned (mimicking the behavior of the system's calloc).
+If either `nmemb` or `size` is zero, the function returns the result of `malloc(1)`, ensuring that a valid pointer is returned.
 The function checks for overflow by verifying that the multiplication `nmemb * size` does not wrap around.
-Memory is zeroed using `ft_bzero` after allocation.
-
-Se `nmemb` ou `size` for zero, a função retorna o resultado de `malloc(1)`, garantindo que um ponteiro válido seja sempre retornado (imitando o comportamento do calloc do sistema).
-A função verifica overflow garantindo que a multiplicação `nmemb * size` não tenha resultado incorreto.
-A memória é zerada com `ft_bzero` após a alocação.
+After allocation, the memory is initialized to zero using `ft_bzero`.
 
 ---
 
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
