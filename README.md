@@ -2,9 +2,13 @@
 
 # Libft - Your Very First Own Library
 
+[![Language](https://img.shields.io/badge/language-C-blue)](https://github.com/ThiagoWippel/42-Projects-Libft)
+[![Status](https://img.shields.io/badge/status-completed-brightgreen)](https://github.com/ThiagoWippel/42-Projects-Libft)
+[![School](https://img.shields.io/badge/42-SP-963D97)](https://www.42sp.org.br/)
+
 ## Description
 
-Libft is a foundational C library project that involves recoding a set of standard C library functions, as well as additional utility functions that will be useful throughout the 42 curriculum. The library includes implementations of libc functions (with the `ft_` prefix), extra string/memory manipulation functions, and a complete linked list API.
+Libft is a foundational C library project that involves recoding a set of standard C library functions, as well as additional utility functions that will be useful throughout the 42 curriculum. The library includes reimplementations of libc functions (with the `ft_` prefix), extra string/memory manipulation functions, and a complete linked list API.
 
 This project serves as the building block for all future 42 projects, reinforcing understanding of memory management, pointer arithmetic, string manipulation, and data structures in C.
 
@@ -76,7 +80,7 @@ typedef struct s_list
 make
 ```
 
-This generates the `libft.a` static library at the root of the repository.
+This generates the `libft.a` static library.
 
 Other available rules:
 
@@ -100,52 +104,57 @@ cc -Wall -Wextra -Werror my_program.c -L. -lft -o my_program
 ## Project Structure
 
 ```
-libft/
-├── libft.h             # Header with prototypes, includes, and t_list struct
-├── Makefile            # Build system
-├── ft_isalpha.c        # Character classification functions
-├── ft_isdigit.c
-├── ft_isalnum.c
-├── ft_isascii.c
-├── ft_isprint.c
-├── ft_strlen.c         # String functions
-├── ft_strlcpy.c
-├── ft_strlcat.c
-├── ft_strchr.c
-├── ft_strrchr.c
-├── ft_strncmp.c
-├── ft_strnstr.c
-├── ft_strdup.c
-├── ft_substr.c
-├── ft_strjoin.c
-├── ft_strtrim.c
-├── ft_split.c
-├── ft_strmapi.c
-├── ft_striteri.c
-├── ft_memset.c         # Memory functions
-├── ft_bzero.c
-├── ft_memcpy.c
-├── ft_memmove.c
-├── ft_memchr.c
-├── ft_memcmp.c
-├── ft_calloc.c
-├── ft_toupper.c        # Conversion functions
-├── ft_tolower.c
-├── ft_atoi.c
-├── ft_itoa.c
-├── ft_putchar_fd.c     # File descriptor output functions
-├── ft_putstr_fd.c
-├── ft_putendl_fd.c
-├── ft_putnbr_fd.c
-├── ft_lstnew_bonus.c   # Bonus: linked list functions
-├── ft_lstadd_front_bonus.c
-├── ft_lstsize_bonus.c
-├── ft_lstlast_bonus.c
-├── ft_lstadd_back_bonus.c
-├── ft_lstdelone_bonus.c
-├── ft_lstclear_bonus.c
-├── ft_lstiter_bonus.c
-└── ft_lstmap_bonus.c
+42-Projects-Libft/
+├── includes/
+│   └── libft.h              # Header with prototypes, includes, and t_list struct
+├── src/
+│   ├── ft_isalpha.c         # Character classification functions
+│   ├── ft_isdigit.c
+│   ├── ft_isalnum.c
+│   ├── ft_isascii.c
+│   ├── ft_isprint.c
+│   ├── ft_strlen.c          # String functions
+│   ├── ft_strlcpy.c
+│   ├── ft_strlcat.c
+│   ├── ft_strchr.c
+│   ├── ft_strrchr.c
+│   ├── ft_strncmp.c
+│   ├── ft_strnstr.c
+│   ├── ft_strdup.c
+│   ├── ft_substr.c
+│   ├── ft_strjoin.c
+│   ├── ft_strtrim.c
+│   ├── ft_split.c
+│   ├── ft_strmapi.c
+│   ├── ft_striteri.c
+│   ├── ft_memset.c          # Memory functions
+│   ├── ft_bzero.c
+│   ├── ft_memcpy.c
+│   ├── ft_memmove.c
+│   ├── ft_memchr.c
+│   ├── ft_memcmp.c
+│   ├── ft_calloc.c
+│   ├── ft_toupper.c         # Conversion functions
+│   ├── ft_tolower.c
+│   ├── ft_atoi.c
+│   ├── ft_itoa.c
+│   ├── ft_putchar_fd.c      # File descriptor output functions
+│   ├── ft_putstr_fd.c
+│   ├── ft_putendl_fd.c
+│   ├── ft_putnbr_fd.c
+│   ├── ft_lstnew_bonus.c    # Bonus: linked list functions
+│   ├── ft_lstadd_front_bonus.c
+│   ├── ft_lstsize_bonus.c
+│   ├── ft_lstlast_bonus.c
+│   ├── ft_lstadd_back_bonus.c
+│   ├── ft_lstdelone_bonus.c
+│   ├── ft_lstclear_bonus.c
+│   ├── ft_lstiter_bonus.c
+│   └── ft_lstmap_bonus.c
+├── docs/
+│   └── ft_*.md              # Individual function documentation
+├── Makefile
+└── README.md
 ```
 
 ## Resources
