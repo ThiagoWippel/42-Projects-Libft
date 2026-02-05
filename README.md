@@ -2,10 +2,6 @@
 
 # Libft - Your Very First Own Library
 
-[![Language](https://img.shields.io/badge/language-C-blue)](https://github.com/ThiagoWippel/42-Projects-Libft)
-[![Status](https://img.shields.io/badge/status-completed-brightgreen)](https://github.com/ThiagoWippel/42-Projects-Libft)
-[![School](https://img.shields.io/badge/42-SP-963D97)](https://www.42sp.org.br/)
-
 ## Description
 
 Libft is a foundational C library project that involves recoding a set of standard C library functions, as well as additional utility functions that will be useful throughout the 42 curriculum. The library includes reimplementations of libc functions (with the `ft_` prefix), extra string/memory manipulation functions, and a complete linked list API.
