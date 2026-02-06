@@ -1,6 +1,6 @@
-# ft\_itoa Documentation
+# ft_itoa Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 char *ft_itoa(int n);
@@ -8,45 +8,33 @@ char *ft_itoa(int n);
 
 ---
 
-### Description / Descrição
+### Description
 
 `ft_itoa` converts the integer `n` into a newly allocated null-terminated string representing its decimal value.
 
-`ft_itoa` converte o inteiro `n` em uma nova string terminada em nulo representando seu valor decimal.
-
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `int n`: The integer to convert.
 
- 
+---
 
-* `int n`: O inteiro a ser convertido.
+### Return Value
+
+Returns a pointer to the newly allocated string representing the number, or `NULL` if memory allocation fails.
 
 ---
 
-### Return Value / Valor de Retorno
+### Details
 
-A pointer to the newly allocated string representing the number, or `NULL` if memory allocation fails.
-
-Um ponteiro para a nova string alocada representando o número, ou `NULL` se a alocação de memória falhar.
-
----
-
-### Details / Detalhes
-
-Allocates memory dynamically for the string representation of `n`, including the sign if negative.
-Handles the special case of `INT_MIN` safely by using `long` to prevent overflow.
-Uses a helper function `count_digits` to determine the exact amount of space needed.
-
-Aloca memória dinamicamente para a representação em string de `n`, incluindo o sinal se for negativo.
-Lida com o caso especial de `INT_MIN` de forma segura utilizando `long` para evitar overflow.
-Usa a função auxiliar `count_digits` para determinar a quantidade exata de espaço necessário.
+The function dynamically allocates memory for the string representation of `n`, including the sign if the number is negative.
+It safely handles the special case of `INT_MIN` by using a `long` type to avoid overflow.
+A helper function, `count_digits`, is used to determine the exact amount of memory required for the conversion.
 
 ---
 
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
@@ -54,10 +42,10 @@ Usa a função auxiliar `count_digits` para determinar a quantidade exata de esp
 
 int main(void)
 {
-	char *str = ft_itoa(-42);
-	printf("%s\n", str);
-	free(str);
-	return 0;
+    char *str = ft_itoa(-42);
+    printf("%s\n", str);
+    free(str);
+    return 0;
 }
 ```
 
