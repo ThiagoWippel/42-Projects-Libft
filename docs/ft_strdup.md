@@ -1,6 +1,6 @@
-# ft\_strdup Documentation
+# ft_strdup Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 char *ft_strdup(const char *str);
@@ -8,45 +8,33 @@ char *ft_strdup(const char *str);
 
 ---
 
-### Description / Descrição
+### Description
 
-`ft_strdup` duplicates the null-terminated string `str` by allocating sufficient memory and copying the string contents into the new memory area.
-
-`ft_strdup` duplica a string terminada em nulo `str` alocando memória suficiente e copiando o conteúdo da string para essa nova área de memória.
+`ft_strdup` duplicates the null-terminated string `str` by allocating sufficient memory and copying the string contents into the newly allocated memory area.
 
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `const char *str`: The null-terminated string to duplicate.
 
- 
-
-* `const char *str`: A string terminada em nulo a ser duplicada.
-
 ---
 
-### Return Value / Valor de Retorno
+### Return Value
 
 Returns a pointer to the newly allocated duplicate string.
 Returns `NULL` if memory allocation fails.
 
-Retorna um ponteiro para a nova string duplicada alocada.
-Retorna `NULL` se a alocação de memória falhar.
+---
+
+### Details
+
+The function first calculates the length of `str`, including the terminating null byte.
+It then allocates enough memory, copies the string using `ft_strlcpy`, and returns a pointer to the duplicated string.
 
 ---
 
-### Details / Detalhes
-
-The function first calculates the length of `str` (including the terminating null byte).
-Then it allocates memory of sufficient size, copies the string using `ft_strlcpy`, and returns the pointer to the copy.
-
-A função calcula o comprimento de `str` (incluindo o byte nulo terminador).
-Em seguida, aloca memória do tamanho suficiente, copia a string usando `ft_strlcpy` e retorna o ponteiro para a cópia.
-
----
-
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
@@ -65,7 +53,7 @@ int main(void)
     {
         printf("Memory allocation failed.\n");
     }
-    return 0;
+    return (0);
 }
 ```
 
