@@ -1,6 +1,6 @@
-# ft\_strmapi Documentation
+# ft_strmapi Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -8,47 +8,34 @@ char *ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
 ---
 
-### Description / Descrição
+### Description
 
 `ft_strmapi` applies the function `f` to each character of the string `s`, passing its index as the first argument, and creates a new string resulting from successive applications of `f`.
 
-`ft_strmapi` aplica a função `f` a cada caractere da string `s`, passando seu índice como primeiro argumento, e cria uma nova string resultante das aplicações sucessivas de `f`.
-
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `char const *s`: The string to be mapped.
 * `char (*f)(unsigned int, char)`: The function to apply to each character.
 
- 
-
-* `char const *s`: A string a ser percorrida.
-* `char (*f)(unsigned int, char)`: Função a ser aplicada a cada caractere.
-
 ---
 
-### Return Value / Valor de Retorno
+### Return Value
 
 Returns a new string resulting from applying `f` to each character of `s`, or `NULL` if memory allocation fails.
 
-Retorna uma nova string resultante da aplicação de `f` a cada caractere de `s`, ou `NULL` se a alocação de memória falhar.
-
 ---
 
-### Details / Detalhes
+### Details
 
-Each character in the original string `s` is transformed by the function `f`, which receives the character's index and its value.
+Each character in the original string `s` is transformed by the function `f`, which receives the character index and its value.
 The function does not modify the original string and allocates a new one.
-Returns `NULL` if `s` or `f` is `NULL`, or if allocation fails.
-
-Cada caractere da string original `s` é transformado pela função `f`, que recebe o índice e o valor do caractere.
-A função não modifica a string original e aloca uma nova.
-Retorna `NULL` se `s` ou `f` forem `NULL`, ou se a alocação falhar.
+Returns `NULL` if `s` or `f` is `NULL`, or if memory allocation fails.
 
 ---
 
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
