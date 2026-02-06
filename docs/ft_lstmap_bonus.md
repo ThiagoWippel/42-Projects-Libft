@@ -1,4 +1,4 @@
-### ft_lstmap Documentation
+## ft_lstmap Documentation
 
 ### Function Prototype
 
