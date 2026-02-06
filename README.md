@@ -150,6 +150,7 @@ cc -Wall -Wextra -Werror my_program.c -L. -lft -o my_program
 │   ├── ft_substr.c
 │   ├── ft_tolower.c
 │   └── ft_toupper.c
+├── .gitignore
 ├── Makefile
 └── README.md
 ```
