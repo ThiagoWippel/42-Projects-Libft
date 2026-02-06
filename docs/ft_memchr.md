@@ -1,6 +1,6 @@
-# ft\_memchr Documentation
+# ft_memchr Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 void *ft_memchr(const void *str, int c, size_t n);
@@ -8,49 +8,36 @@ void *ft_memchr(const void *str, int c, size_t n);
 
 ---
 
-### Description / Descrição
+### Description
 
-`ft_memchr` scans the initial `n` bytes of the memory area pointed to by `str` for the first occurrence of the byte value `c`.
-The comparison is done byte by byte as `unsigned char`.
-
-`ft_memchr` procura, nos primeiros `n` bytes da área de memória apontada por `str`, a primeira ocorrência do byte de valor `c`.
-A comparação é feita byte a byte como `unsigned char`.
+`ft_memchr` searches for the first occurrence of the byte `c` in the first `n` bytes of the memory area pointed to by `str`.
 
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
-* `const void *str`: Pointer to the memory area to search.
-* `int c`: Byte value to search for, interpreted as an unsigned char.
+* `const void *str`: Pointer to the memory area to be searched.
+* `int c`: The byte value to search for, converted to an unsigned char.
 * `size_t n`: Number of bytes to examine.
 
- 
+---
 
-* `const void *str`: Ponteiro para a área de memória onde será feita a busca.
-* `int c`: Valor do byte a ser procurado, interpretado como unsigned char.
-* `size_t n`: Número de bytes a serem examinados.
+### Return Value
+
+Returns a pointer to the first occurrence of the byte `c` within the memory area.
+Returns `NULL` if the byte is not found within the first `n` bytes.
 
 ---
 
-### Return Value / Valor de Retorno
+### Details
 
-Returns a pointer to the first occurrence of the byte `c` in the memory area, or `NULL` if not found.
-
-Retorna um ponteiro para a primeira ocorrência do byte `c` na área de memória, ou `NULL` se não for encontrado.
-
----
-
-### Details / Detalhes
-
-The function is often used for binary data since it does not depend on null terminators.
-The search stops as soon as the byte is found or after `n` bytes have been checked.
-
-A função é frequentemente usada com dados binários, pois não depende de terminadores nulos.
-A busca para assim que o byte é encontrado ou após `n` bytes terem sido verificados.
+The function scans the memory byte by byte up to `n` bytes.
+The comparison is performed using an unsigned char cast of `c`.
+This implementation mimics the behavior of the standard C `memchr` function.
 
 ---
 
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
@@ -58,12 +45,14 @@ A busca para assim que o byte é encontrado ou após `n` bytes terem sido verifi
 
 int main(void)
 {
-    char data[] = {0, 1, 2, 3, 4, 5};
-    char *ptr = ft_memchr(data, 3, 6);
-    if (ptr != NULL)
-        printf("Found byte 3 at position: %ld\n", ptr - data);
+    char data[] = "Hello world";
+    char *result = ft_memchr(data, 'w', sizeof(data));
+
+    if (result)
+        printf("Character found: %c\n", *result);
     else
-        printf("Byte not found.\n");
+        printf("Character not found.\n");
+
     return 0;
 }
 ```
