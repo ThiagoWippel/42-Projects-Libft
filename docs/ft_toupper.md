@@ -1,6 +1,6 @@
-# ft\_toupper Documentation
+# ft_toupper Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 int ft_toupper(int c);
@@ -8,45 +8,33 @@ int ft_toupper(int c);
 
 ---
 
-### Description / Descrição
+### Description
 
-`ft_toupper` converts a lowercase alphabetic character to its uppercase equivalent if such a conversion is possible.
-
-`ft_toupper` converte um caractere alfabético minúsculo para seu equivalente em maiúsculo, se possível.
+`ft_toupper` converts a lowercase alphabetic character to its uppercase equivalent, if such a conversion is possible.
 
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `int c`: The character to be converted, passed as an integer.
 
- 
-
-* `int c`: O caractere a ser convertido, passado como um inteiro.
-
 ---
 
-### Return Value / Valor de Retorno
+### Return Value
 
 Returns the uppercase equivalent of `c` if it is a lowercase letter.
 Otherwise, returns `c` unchanged.
 
-Retorna o equivalente maiúsculo de `c` se for uma letra minúscula.
-Caso contrário, retorna `c` inalterado.
-
 ---
 
-### Details / Detalhes
+### Details
 
 This function only affects characters in the ASCII range `'a'` to `'z'`.
-The conversion is performed by subtracting 32 from the ASCII value of `c`.
-
-Esta função afeta apenas caracteres no intervalo ASCII de `'a'` a `'z'`.
-A conversão é feita subtraindo 32 do valor ASCII de `c`.
+The conversion is performed by subtracting `32` from the ASCII value of `c`.
 
 ---
 
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
@@ -54,10 +42,10 @@ A conversão é feita subtraindo 32 do valor ASCII de `c`.
 
 int main(void)
 {
-    char lower = 'g';
-    char upper = ft_toupper(lower);
-    printf("Original: %c → Uppercase: %c\n", lower, upper);
-    return 0;
+	char lower = 'g';
+	char upper = ft_toupper(lower);
+	printf("Original: %c -> Uppercase: %c\n", lower, upper);
+	return 0;
 }
 ```
 
