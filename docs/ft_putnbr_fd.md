@@ -1,6 +1,6 @@
-# ft\_putnbr\_fd Documentation
+# ft_putnbr_fd Documentation
 
-### Function Prototype / Protótipo da Função
+### Function Prototype
 
 ```c
 void ft_putnbr_fd(int n, int fd);
@@ -8,55 +8,42 @@ void ft_putnbr_fd(int n, int fd);
 
 ---
 
-### Description / Descrição
+### Description
 
-`ft_putnbr_fd` writes the integer `n` to the file descriptor `fd` as a string of digits.
-
-`ft_putnbr_fd` escreve o inteiro `n` no descritor de arquivo `fd` como uma sequência de dígitos.
+`ft_putnbr_fd` writes the integer `n` to the file descriptor `fd` as a sequence of digits.
 
 ---
 
-### Parameters / Parâmetros
+### Parameters
 
 * `int n`: The integer to write.
 * `int fd`: The file descriptor where the number will be written.
 
- 
-
-* `int n`: O inteiro a ser escrito.
-* `int fd`: O descritor de arquivo onde o número será escrito.
-
 ---
 
-### Return Value / Valor de Retorno
+### Return Value
 
 None.
 
-Nenhum.
+---
+
+### Details
+
+The function recursively breaks down the integer `n` into individual digits and writes each digit to the file descriptor `fd` using the `write` system call.
+It explicitly handles the special case of the minimum 32-bit signed integer (`-2147483648`).
+If `n` is negative (except for the minimum value), a minus sign is written before the digits.
 
 ---
 
-### Details / Detalhes
-
-The function recursively breaks down the integer `n` into digits and writes each digit to the file descriptor `fd` using the `write` system call.
-Handles the special case of the minimum 32-bit signed integer (`-2147483648`) explicitly.
-If `n` is negative (other than the minimum), it writes a minus sign before the digits.
-
-A função divide recursivamente o inteiro `n` em dígitos e escreve cada dígito no descritor de arquivo `fd` usando a chamada de sistema `write`.
-Trata explicitamente o caso especial do menor inteiro com sinal de 32 bits (`-2147483648`).
-Se `n` for negativo (exceto o mínimo), escreve um sinal de menos antes dos dígitos.
-
----
-
-### Example Usage / Exemplo de Uso
+### Example Usage
 
 ```c
 #include "libft.h"
 
 int main(void)
 {
-	ft_putnbr_fd(-12345, 1);
-	return 0;
+    ft_putnbr_fd(-12345, 1);
+    return (0);
 }
 ```
 
